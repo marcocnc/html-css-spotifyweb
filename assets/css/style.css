@@ -79,16 +79,28 @@ main{
 	overflow: auto;
 }
 
+/* PODCAST */
 #podcast{
     width: 50%;
     margin: 0 auto;
 }
 
+/* RECENTLY PLAYED */
 
+.card{
+    width: calc(100% / 5);
+}
 
+.card-image img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
 
-
-
+.card-text{
+    flex-direction: column;
+text-align: center;
+}
 
 /* RESPONSIVE */
 
