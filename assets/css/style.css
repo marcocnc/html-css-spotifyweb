@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .debug{
     background-color: rgba(0, 0, 255, 0.301);
     border: 1px solid #000;
@@ -49,28 +53,35 @@ main{
 .main-nav{
     width: 250px;
     color: white;
+    height: calc(100vh - 80px);
     /*debug*/
     background-color: rgba(0, 85, 85, 0.292);
     position: fixed;
-    /* height: 500px; */
 }
 
 .main-nav i{
     font-size:25px;
 }
 
-.invisible{
-    opacity: 0;
+#playlists{
+    height: calc(100vh - 350px);
+    overflow: auto;
 }
-/* CONTAINER */
-.container{
-    width: 85%;
-    max-width: 1700px;
-    margin: 0 auto;
 
-    /*debug*/
-    background-color: rgb(95, 250, 255);
-    /* height: 500px; */
+/* CONTAINER */
+.container {
+	width: calc(100% - 250px);
+	background-color: rgb(95, 250, 255);
+	position: fixed;
+	right: 0;
+	top: 80px;
+	height: calc(100vh - 160px);
+	overflow: auto;
+}
+
+#podcast{
+    width: 50%;
+    margin: 0 auto;
 }
 
 
@@ -88,7 +99,7 @@ main{
     }
 
     .container{
-        min-width: 90%;
+        min-width: calc(100% - 80px);
     }
 
     header{

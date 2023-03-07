@@ -12,14 +12,6 @@
     padding: 0 20px;
 }
 
-.pt-20{
-    padding-top: 20px;
-}
-
-.pb-10{
-    padding-bottom: 10px;
-}
-
 .py-10{
     padding: 10px 0;
 }
@@ -32,8 +24,33 @@
     padding: 20px 0;
 }
 
+.pt-20{
+    padding-top: 20px;
+}
+
+.pb-10{
+    padding-bottom: 10px;
+}
+
+.pr-10{
+    padding-right: 10px;
+}
 
 /* Margin */
 .mt-30{
     margin-top: 30px;
+}
+
+
+/* DISPLAY FLEX */
+.d-flex{
+    display: flex;
+}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+.space-bet{
+    justify-content: space-between;
 }
