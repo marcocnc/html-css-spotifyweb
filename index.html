@@ -7,165 +7,79 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- Style -->
+
     <link rel="stylesheet" href="assets/css/utilities.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Spotify</title>
 </head>
 <body>
-    <main>
-        
-        <!-- HEADER -->
-        <header>
-            <button class="mt-30">
-                BOTTONE
-            </button>
-        </header>
-        
-        <!-- SIDEBAR NAV -->
-        <nav class="main-nav px-15 pt-20">
-            <ul>
-                <li class="logo">
-                    <img src="assets/img/logo.svg" alt="logo">
-                    <li class="small-logo">
-                        <img src="assets/img/logo-small.svg" alt="logo-small">
+    <div class="container-wrap">
+        <header class="debug"></header>
+        <main class="d-flex debug">
+            <nav class="main-nav px-15 pt-20">
+                <ul>
+                    <li class="logo">
+                        <img src="assets/img/logo.svg" alt="logo">
+                        <li class="small-logo">
+                            <img src="assets/img/logo-small.svg" alt="logo-small">
+                        </li>
                     </li>
-                </li>
-                <li class="pt-20 pb-10">
-                    <i class="fa-sharp fa-solid fa-house"></i>
-                    <span>HOME</span>
-                </li>
-                <li class="py-10">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <span>HOME</span>
-                </li>
-                <li class="py-10">
-                    <i class="fa-sharp fa-solid fa-house"></i>
-                    <span>HOME</span>
-                </li>
-                
-            </ul>
-
-            <div class="personal">
-                <ul id="playlists">
+                    <li class="pt-20 pb-10">
+                        <i class="fa-sharp fa-solid fa-house"></i>
+                        <a href="#">HOME</a>
+                    </li>
                     <li class="py-10">
-                        <span>TITOLO</span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="#">HOME</a>
                     </li>
                     <li class="py-10">
                         <i class="fa-sharp fa-solid fa-house"></i>
-                        <span>HOME</span>
-                     </li>
-                    <li class="py-10">
-                        <i class="fa-sharp fa-solid fa-house"></i>
-                        <span>HOME</span></li>
-                    <li class="py-10">
-                        <span>HOME</span>
+                        <a href="#">HOME</a>
                     </li>
-                    <li class="py-10">
-                        <span>HOME</span>
-                    </li>
-                    <li class="py-10">
-                        <span>HOME</span>
-                    </li>
-                    <li class="py-10">
-                        <span>HOME</span>
-                    </li>
-                    <li class="py-10">
-                        <span>HOME</span>
-                    </li>
-                    <li class="py-10">
-                        <span>HOME</span>
-                    </li>
-                    <li class="py-10">
-                        <span>HOME</span>
-                    </li>
-                    <li class="py-10">
-                        <span>HOME</span>
-                    </li>
-                    <li class="py-10">
-                        <span>HOME</span>
-                    </li>
-                    <li class="py-10">
-                        <span>HOME</span>
-                    </li>
+                    
                 </ul>
+    
+                <div class="personal">
+                    <div class="new-playlist">
+                        <ul>
+                            <li class="py-10">
+                                <h3>TITOLO</h3>
+                            </li>
+                            <li class="py-10">
+                                <i class="fa-sharp fa-solid fa-house"></i>
+                                <a href="#">HOME</a>
+                             </li>
+                        </ul>
+                    </div>
+                    <ul id="playlists">
+                        <li class="py-10">
+                            <a href="#">HOME</a>
+                        </li>
+                        <li class="py-10">
+                            <a href="#">HOME</a>
+                        </li>
+                        <li class="py-10">
+                            <a href="#">HOME</a>
+                        </li>
+                        <li class="py-10">
+                            <a href="#">HOME</a>
+                        </li>
+                        
+                        
+                        <div class="download">
+                            download
+                        </div>
+                        <div class="user">
+                            user
+                        </div>
+                    </ul>
+                </div>
+    
+            </nav>
+            <div class="content">
             </div>
-                <div class="download">
-                        download
-                </div>
-                <div class="user">
-                        user
-                </div>
-        </nav>
-        <div class="container"> 
-
-            <!-- Podcast e altro -->
-            <section id="podcast" class="py-10">
-                <ul class="d-flex space-bet">
-                    <li class="pr-10"><a href="#">link</a></li>
-                    <li class="pr-10"><a href="#">link</a></li>
-                    <li class="pr-10"><a href="#">link</a></li>
-                    <li class="pr-10"><a href="#">link</a></li>
-                    <li class="pr-10"><a href="#">link</a></li>
-                    <li class="pr-10"><a href="#">link</a></li>
-                </ul>
-            </section>
-
-            <!-- Recently played -->
-            <section id="played" class="px-15">
-                <h3 class="pb-10">TITOLO</h3>
-                <div class="track d-flex f-wrap">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
-                        </div>
-                        <div class="card-text d-flex">
-                            <span class="track-title">Heavy Metal</span>
-                            <span class="artist">artista</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
-                        </div>
-                        <div class="card-text d-flex">
-                            <span class="track-title">Heavy Metal</span>
-                            <span class="artist">artista</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
-                        </div>
-                        <div class="card-text d-flex">
-                            <span class="track-title">Heavy Metal</span>
-                            <span class="artist">artista</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
-                        </div>
-                        <div class="card-text d-flex">
-                            <span class="track-title">Heavy Metal</span>
-                            <span class="artist">artista</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
-                        </div>
-                        <div class="card-text d-flex">
-                            <span class="track-title">Heavy Metal</span>
-                            <span class="artist">artista</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        
-        </div>
-    </main>
+        </main>
+        <div class="player debug"></div>
+    </div>
 </body>
 </html>
