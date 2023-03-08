@@ -73,13 +73,13 @@
                         </li>
                         
                         
-                        <div class="download">
-                            download
-                        </div>
-                        <div class="user">
-                            user
-                        </div>
                     </ul>
+                    <div class="download">
+                        download
+                    </div>
+                    <div class="user">
+                        user
+                    </div>
                 </div>
     
             </nav>
@@ -223,7 +223,56 @@
                 </div>
                 <!-- /Feed User -->
             </main>
-            <div class="player debug"></div>
+            <div class="player d-flex space-bet al-it-c px-15 debug">
+                <section id="song">
+                    <div class="mini-card d-flex al-it-c">
+                        <div class="image">
+                            <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
+                        </div>
+                        <div class="title-song px-15">
+                            <a href="#">titolo</a>
+                            <a href="#">artista</a>
+                        </div>
+                        <div class="icons-song">
+                            <i class="fa-regular fa-heart pr-10"></i>
+                            <i class="fa-regular fa-folder pr-10"></i>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="reproduce">
+                   <div id="controls d-flex">
+                        <div class="play d-flex j-cont-c">
+                            <i class="fa-solid fa-shuffle pr-10"></i>
+                            <i class="fa-solid fa-backward-step pr-10"></i>
+                            <i id="stop" class="fa-regular fa-circle-play pr-10"></i>
+                            <i class="fa-solid fa-forward-step pr-10"></i>
+                            <i class="fa-solid fa-rotate-right"></i>
+                        </div>
+                        <div class="time d-flex j-cont-c al-it-c">
+                            <span>0:25</span>
+                            <div class="line">
+                                <div class="grey-line"></div>
+                            </div>
+                            <span>4:25</span>
+                        </div>
+                   </div>
+                </section>
+
+                <section id="settings">
+                    <div class="d-flex al-it-c">
+                        <div class="settings-icons">
+                            <i class="fa-solid fa-list"></i>
+                            <i class="fa-solid fa-desktop"></i>
+                            <i class="fa-solid fa-volume-low"></i>
+                        </div>
+                        <div class="line">
+                            <div class="grey-line"></div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
         </div>
     </body>
 </html>

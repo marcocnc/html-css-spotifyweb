@@ -40,12 +40,20 @@
     padding-bottom: 30px;
 }
 
+.pl-15{
+    padding-left: 15px;
+}
+
 .pl-20{
     padding-left: 20px;
 }
 
 .pr-10{
     padding-right: 10px;
+}
+
+.pr-15{
+    padding-right: 15px;
 }
 
 /* Margin */
@@ -65,4 +73,11 @@
 
 .space-bet{
     justify-content: space-between;
+}
+.al-it-c{
+    align-items: center;
+}
+
+.j-cont-c{
+    justify-content: center;
 }
