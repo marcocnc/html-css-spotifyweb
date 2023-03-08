@@ -6,7 +6,7 @@
 }
 
 body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .debug{
@@ -44,11 +44,14 @@ header{
     height: calc(100vh - 90px);
     overflow: auto;
     padding-top: 90px;
-    background-color: beige;
+    background-color: #141922;
+    color:white;
 }
 
 .player{
     height: 90px;
+    background-color: #282828;
+    color: white;
 }
 
 ul li{
@@ -79,9 +82,14 @@ header button:hover{
 /* MAIN NAV */
 .main-nav{
     background-color: #000000;
+    font-weight: bold;
 }
 .main-nav i {
     vertical-align: middle;
+}
+
+.main-nav ul li a span{
+    font-size: 14px;
 }
 
 .logo img{
@@ -93,8 +101,10 @@ header button:hover{
     display: none;
 }
 
-.main-nav i{
-    font-size:25px;
+.nav-icon{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
 }
 
 .main-nav a{
@@ -102,7 +112,7 @@ header button:hover{
 }
 
 #playlists{
-    height: calc(100vh - 450px);
+    height: calc(100vh - 510px);
     overflow: auto;
 }
 
@@ -110,12 +120,41 @@ header button:hover{
     font-size: 45px;
 }
 
+.download{
+    border-bottom: 1px solid #707070;
+}
+
+.download img,
+.user img{
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
+
+.download a,
+.user a,
+#create-for p{
+    font-size: 12px;
+    color: #707070;
+}
+
+.user img{
+    background-color:  #707070;
+    border-radius: 50%;
+}
+
+
 /* PODCAST */
 #podcast{
-    width: 30%;
+    width: 60%;
     margin: 0 auto;
 }
 
+#podcast a{
+    color: #7A7C81;
+    font-size: 14px;
+    font-weight: 900;
+}
 
 /* RECENTLY PLAYED */
 .card{
@@ -133,9 +172,29 @@ header button:hover{
     width: 100%;
 }
 
+#stranger{
+    text-align: center;
+}
+
+.track-title,
+.artist{
+    font-weight: bold;
+}
+
+.track-title{
+    color:white;
+}
+
+.artist{
+    font-size: 12px;
+    color: #72757A;
+}
+
 /* CREATED FOR JOHN DOE */
 
-
+#create-for p{
+    font-weight: bold;
+}
 
 /* MOST POPULAR ARTISTS */
 .card-image.round-image img{
@@ -160,6 +219,11 @@ header button:hover{
 .mini-card .image img{
     width: 50px;
     height: 50px;
+}
+
+#song a{
+    color:white;
+    font-size: 13px;
 }
 
 /* Reproduce */
@@ -232,9 +296,21 @@ header button:hover{
         display: block;
     }
     
-    .main-nav .personal,
-    .main-nav a{
-        
-        display: none;
+    .main-nav span,
+    .main-nav .personal .new-playlist,
+    .main-nav #playlists{
+         display: none;
+    }
+
+   .user-download {
+        height: calc(100vh - 310px);
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .download{
+        border: none;
     }
 }

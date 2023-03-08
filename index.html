@@ -8,6 +8,12 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="assets/css/utilities.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Spotify</title>
@@ -32,16 +38,19 @@
                         </li>
                     </li>
                     <li class="pt-20 pb-10">
-                        <i class="fa-sharp fa-solid fa-house"></i>
-                        <a href="#">Home</a>
+                        <a href="#">
+                            <img class="nav-icon" src="assets/img/home.svg" alt="home">
+                        <span>Home</span> </a>
                     </li>
                     <li class="py-10">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <a href="#">Cerca</a>
+                        <a href="#"></href>
+                            <img class="nav-icon" src="assets/img/search.svg" alt="search">
+                            <span>Cerca</span></a>
                     </li>
                     <li class="py-10">
-                        <i class="fa-solid fa-lines-leaning"></i>
-                        <a href="#">La tua libreria</a>
+                        <a href="#">
+                            <img class="nav-icon" src="assets/img/libreria.svg" alt="libreria">
+                            <span>La tua libreria</span></a>
                     </li>
                     
                 </ul>
@@ -74,11 +83,18 @@
                         
                         
                     </ul>
-                    <div class="download">
-                        download
-                    </div>
-                    <div class="user">
-                        user
+                    <div class="user-download">
+
+                        <div class="download">
+                            <a href="#">
+                                <img class="pr-10" src="assets/img/download.svg" alt="download">
+                           <span> Installa app</span></a>
+                        </div>
+                        <div class="user pt-20">
+                            <a href="#">
+                                <img src="assets/img/profile.svg" alt="profile" class="mr-10">
+                            <span>John Doe</span></a>
+                        </div>
                     </div>
                 </div>
     
@@ -91,12 +107,24 @@
                     <!-- Podcast e altro -->
                 <section id="podcast" class="py-10">
                     <ul class="d-flex f-wrap">
-                        <li class="pr-10"><a href="#">link</a></li>
-                        <li class="pr-10"><a href="#">link</a></li>
-                        <li class="pr-10"><a href="#">link</a></li>
-                        <li class="pr-10"><a href="#">link</a></li>
-                        <li class="pr-10"><a href="#">link</a></li>
-                        <li class="pr-10"><a href="#">link</a></li>
+                        <li class="pr-15 pb-20">
+                            <a href="#">IN EVIDENZA</a>
+                        </li>
+                        <li class="pr-15 pb-20">
+                            <a href="#">PODCAST</a>
+                        </li>
+                        <li class="pr-15 pb-20">
+                            <a href="#">CLASSIFICHE</a>
+                        </li>
+                        <li class="pr-15 pb-20">
+                            <a href="#">GENERI E MOOD</a>
+                        </li>
+                        <li class="pr-15 pb-20">
+                            <a href="#">NUOVE USCITE</a>
+                        </li>
+                        <li class="pr-15 pb-20">
+                            <a href="#">SCOPRI</a>
+                        </li>
                     </ul>
                 </section>
 
@@ -104,66 +132,76 @@
 
                 <!-- Recently played -->
                 <section id="played" class="px-15 pb-30">
-                    <h3 class="pb-20">TITOLO</h3>
+                    <h3 class="px-15 pb-20">Recently Played</h3>
                     <section class="track d-flex f-wrap">
 
+                        <!-- Track 1 -->
                         <div class="card px-15 pb-20">
                             <div class="card-image">
                                 <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
                             </div>
                             <div class="card-text d-flex">
-                                <span class="track-title">Heavy Metal</span>
-                                <span class="artist">artista</span>
+                               <a class="track-title py-10" href="#">Heavy Metal</a>
+                                <a class="artist" href="#">Subtitle</a>
                             </div>
                         </div>
 
+                        <!-- Track 2 -->
                         <div class="card px-15 pb-20">
                             <div class="card-image">
-                                <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
+                                <img src="assets/img/stranger.jpeg" alt="stranger">
                             </div>
                             <div class="card-text d-flex">
-                                <span class="track-title">Heavy Metal</span>
-                                <span class="artist">artista</span>
+                                <a class="track-title py-10" href="#">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</a>
+                                <a class="artist" href="#">Kyle Dixon & Michael Stein</a>
                             </div>
                         </div>
 
+                        <!-- Track 3 -->
                         <div class="card px-15 pb-20">
                             <div class="card-image">
-                                <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
+                                <img src="assets/img/aquietplace.jpeg" alt="aquietplace">
                             </div>
                             <div class="card-text d-flex">
-                                <span class="track-title">Heavy Metal</span>
-                                <span class="artist">artista</span>
+                                <a class="track-title py-10" href="#">A quiet place</a>
+                                <a class="artist" href="#">Subtitle</a>
                             </div>
                         </div>
 
+                        <!-- Track 4 -->
                         <div class="card px-15 pb-20">
                             <div class="card-image">
-                                <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
+                                <img src="assets/img/split.jpeg" alt="metal_lifting">
                             </div>
                             <div class="card-text d-flex">
-                                <span class="track-title">Heavy Metal</span>
-                                <span class="artist">artista</span>
+                                <a class="track-title py-10" href="#">Split</a>
+                                <a class="artist" href="#">Subtitle</a>
                             </div>
                         </div>
+
+                        <!-- Track 5 -->
                         <div class="card px-15 pb-20">
                             <div class="card-image">
-                                <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
+                                <img src="assets/img/cure.jpeg" alt="metal_lifting">
                             </div>
                             <div class="card-text d-flex">
-                                <span class="track-title">Heavy Metal</span>
-                                <span class="artist">artista</span>
+                                <a class="track-title py-10" href="#">A cure for wellness</a>
+                                <a class="artist" href="#">Subtitle</a>
                             </div>
                         </div>
+
+                        <!-- Track 6 -->
                         <div class="card px-15 pb-20">
                             <div class="card-image">
-                                <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
+                                <img src="assets/img/sinister.jpeg" alt="sinister">
                             </div>
                             <div class="card-text d-flex">
-                                <span class="track-title">Heavy Metal</span>
-                                <span class="artist">artista</span>
+                                <a class="track-title py-10" href="#">Sinister</a>
+                                <a class="artist" href="#">Subtitle</a>
                             </div>
                         </div>
+
+                       
                     </section>
                 </section>
                 
@@ -171,26 +209,28 @@
                     <!-- Created for John Doe -->
                     <section id="create-for"s class="px-15 pb-30">
                         
-                        <h3 class="pb-20">TITOLO</h3>
+                        <h3 class="px-15 pb-20">Creato per John Doe</h3>
+                        <p class="px-15 pb-20">Più ascolti, più accurati saranno i suggerimenti.</p>
                         <section class="track d-flex f-wrap">
                             <div class="card px-15 pb-20">
                                 <div class="card-image">
-                                    <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
+                                    <img src="assets/img/radar.jpeg" alt="radar">
                                 </div>
                                 <div class="card-text d-flex">
-                                    <span class="track-title">Heavy Metal</span>
-                                    <span class="artist">artista</span>
+                                   <a class="track-title py-10" href="#">Release Radar</a>
+                                    <a class="artist" href="#">Subtitle</a>
                                 </div>
                             </div>
                             <div class="card px-15 pb-20">
                                 <div class="card-image">
-                                    <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
+                                    <img src="assets/img/mixdaily.jpeg" alt="metal_lifting">
                                 </div>
                                 <div class="card-text d-flex">
-                                    <span class="track-title">Heavy Metal</span>
-                                    <span class="artist">artista</span>
+                                   <a class="track-title py-10" href="#">Mix Daily 1</a>
+                                    <a class="artist" href="#">Subtitle</a>
                                 </div>
                             </div>
+                            
                         </section>
                     </section>
                     
@@ -198,24 +238,24 @@
                     <!-- Most popular artists -->
                     <section id="create-for"s class="px-15 pb-30">
 
-                        <h3 class="pb-20">TITOLO</h3>
+                        <h3 class="px-15 pb-20">TITOLO</h3>
                         <section class="track d-flex f-wrap">
                             <div class="card px-15 pb-20">
                                 <div class="card-image round-image">
-                                    <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
+                                    <img src="assets/img/youg.jpeg" alt="youg">
                                 </div>
                                 <div class="card-text d-flex">
-                                    <span class="track-title">Heavy Metal</span>
-                                    <span class="artist">artista</span>
+                                    <a class="track-title py-10" href="#">Youg</a>
+                                    <a class="artist" href="#">Subtitle</a>
                                 </div>
                             </div>
                             <div class="card px-15 pb-20">
                                 <div class="card-image round-image">
-                                    <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
+                                    <img src="assets/img/einaudi.jpeg" alt="einaudi">
                                 </div>
                                 <div class="card-text d-flex">
-                                    <span class="track-title">Heavy Metal</span>
-                                    <span class="artist">artista</span>
+                                    <a class="track-title py-10" href="#">Einaudi</a>
+                                    <a class="artist" href="#">Subtitle</a>
                                 </div>
                             </div>
                         </section>
@@ -223,15 +263,15 @@
                 </div>
                 <!-- /Feed User -->
             </main>
-            <div class="player d-flex space-bet al-it-c px-15 debug">
+            <div class="player d-flex space-bet al-it-c px-15">
                 <section id="song">
                     <div class="mini-card d-flex al-it-c">
                         <div class="image">
-                            <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
+                            <img src="assets/img/player_left.jpg" alt="player_left">
                         </div>
                         <div class="title-song px-15">
-                            <a href="#">titolo</a>
-                            <a href="#">artista</a>
+                            <a href="#">Hilltop Hoods</a>
+                            <a href="#">Clark Griswolo</a>
                         </div>
                         <div class="icons-song">
                             <i class="fa-regular fa-heart pr-10"></i>

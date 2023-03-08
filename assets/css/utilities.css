@@ -24,6 +24,10 @@
     padding: 20px 0;
 }
 
+.pt-10{
+    padding-top: 10px;
+}
+
 .pt-20{
     padding-top: 20px;
 }
@@ -61,6 +65,9 @@
     margin-top: 20px;
 }
 
+.mr-10{
+    margin-right: 10px;
+}
 
 /* DISPLAY FLEX */
 .d-flex{
