@@ -31,23 +31,25 @@
             <!-- Main Nav -->
             <nav class="main-nav px-15 pt-20">
                 <ul>
-                    <li class="logo">
+                    <li class="logo mb-10">
                         <img src="assets/img/logo.svg" alt="logo">
                         <li class="small-logo">
                             <img src="assets/img/logo-small.svg" alt="logo-small">
                         </li>
                     </li>
-                    <li class="pt-20 pb-10">
+                    <li class="selected mt-10 mb-10">
+                        
                         <a href="#">
-                            <img class="nav-icon" src="assets/img/home.svg" alt="home">
-                        <span>Home</span> </a>
+                            <img class="nav-icon " src="assets/img/home.svg" alt="home">
+                            <span>Home</span> 
+                        </a>
                     </li>
-                    <li class="pb-10">
-                        <a href="#"></href>
+                    <li class="mb-10">
+                        <a href="#">
                             <img class="nav-icon" src="assets/img/search.svg" alt="search">
                             <span>Cerca</span></a>
                     </li>
-                    <li class="pb-10">
+                    <li class="mb-10">
                         <a href="#">
                             <img class="nav-icon" src="assets/img/libreria.svg" alt="libreria">
                             <span>La tua libreria</span></a>
@@ -62,8 +64,8 @@
                                 <h3>PLAYLIST</h3>
                             </li>
                             <li class="pb-10">
-                                <i class="fa-solid fa-square-plus"></i>
-                                <a href="#">Crea Playlist</a>
+                                <a href="#"><i class="fa-solid fa-square-plus"></i>
+                                Crea Playlist</a>
                              </li>
                         </ul>
                         <ul id="playlists">
@@ -93,8 +95,8 @@
                         </div>
                         <div class="user pt-20">
                             <a href="#">
-                                <img src="assets/img/profile.svg" alt="profile" class="mr-10">
-                            <span>John Doe</span></a>
+                                <img src="assets/img/profile.svg" alt="profile" class="mr-10"></a>
+                                <span>John Doe</span>
                         </div>
                     </div>
                 </div>
@@ -107,9 +109,10 @@
 
                     <!-- Podcast e altro -->
                 <section id="podcast" class="py-10">
-                    <ul class="d-flex f-wrap">
+                    <ul class="d-flex f-wrap j-cont-c">
                         <li class="pr-15 pb-20">
                             <a href="#">IN EVIDENZA</a>
+                            <div class="active"></div>
                         </li>
                         <li class="pr-15 pb-20">
                             <a href="#">PODCAST</a>
@@ -140,9 +143,12 @@
                         <div class="card px-15 pb-20">
                             <div class="card-image">
                                 <img src="assets/img/metal_lifting.jpg" alt="metal_lifting">
+                                <div class="overlay d-flex j-cont-c al-it-c">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
                             <div class="card-text d-flex">
-                               <a class="track-title py-10" href="#">Heavy Metal</a>
+                                <a class="track-title py-10" href="#">Heavy Metal</a>
                                 <a class="artist" href="#">Subtitle</a>
                             </div>
                         </div>
@@ -151,6 +157,9 @@
                         <div class="card px-15 pb-20">
                             <div class="card-image">
                                 <img src="assets/img/stranger.jpeg" alt="stranger">
+                                <div class="overlay d-flex j-cont-c al-it-c">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
                             <div class="card-text d-flex">
                                 <a class="track-title py-10" href="#">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</a>
@@ -162,6 +171,9 @@
                         <div class="card px-15 pb-20">
                             <div class="card-image">
                                 <img src="assets/img/aquietplace.jpeg" alt="aquietplace">
+                                <div class="overlay d-flex j-cont-c al-it-c">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
                             <div class="card-text d-flex">
                                 <a class="track-title py-10" href="#">A quiet place</a>
@@ -173,6 +185,9 @@
                         <div class="card px-15 pb-20">
                             <div class="card-image">
                                 <img src="assets/img/split.jpeg" alt="metal_lifting">
+                                <div class="overlay d-flex j-cont-c al-it-c">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
                             <div class="card-text d-flex">
                                 <a class="track-title py-10" href="#">Split</a>
@@ -184,6 +199,9 @@
                         <div class="card px-15 pb-20">
                             <div class="card-image">
                                 <img src="assets/img/cure.jpeg" alt="metal_lifting">
+                                <div class="overlay d-flex j-cont-c al-it-c">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
                             <div class="card-text d-flex">
                                 <a class="track-title py-10" href="#">A cure for wellness</a>
@@ -195,6 +213,9 @@
                         <div class="card px-15 pb-20">
                             <div class="card-image">
                                 <img src="assets/img/sinister.jpeg" alt="sinister">
+                                <div class="overlay d-flex j-cont-c al-it-c">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
                             <div class="card-text d-flex">
                                 <a class="track-title py-10" href="#">Sinister</a>
@@ -216,6 +237,9 @@
                             <div class="card px-15 pb-20">
                                 <div class="card-image">
                                     <img src="assets/img/radar.jpeg" alt="radar">
+                                    <div class="overlay d-flex j-cont-c al-it-c">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="card-text d-flex">
                                    <a class="track-title py-10" href="#">Release Radar</a>
@@ -225,6 +249,9 @@
                             <div class="card px-15 pb-20">
                                 <div class="card-image">
                                     <img src="assets/img/mixdaily.jpeg" alt="metal_lifting">
+                                    <div class="overlay d-flex j-cont-c al-it-c">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="card-text d-flex">
                                    <a class="track-title py-10" href="#">Mix Daily 1</a>
@@ -244,15 +271,21 @@
                             <div class="card px-15 pb-20">
                                 <div class="card-image round-image">
                                     <img src="assets/img/youg.jpeg" alt="youg">
+                                    <div class="overlay round d-flex j-cont-c al-it-c">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="card-text d-flex">
-                                    <a class="track-title py-10" href="#">Youg</a>
-                                    <a class="artist" href="#">Subtitle</a>
+                                    <a class="track-title py-10" href="#">Young</a>
+                                    <a class="artist" href="#">Lana del Rey</a>
                                 </div>
                             </div>
                             <div class="card px-15 pb-20">
                                 <div class="card-image round-image">
                                     <img src="assets/img/einaudi.jpeg" alt="einaudi">
+                                    <div class="overlay round d-flex j-cont-c al-it-c">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="card-text d-flex">
                                     <a class="track-title py-10" href="#">Einaudi</a>
@@ -294,8 +327,9 @@
                         </div>
                         <div class="time d-flex j-cont-c al-it-c">
                             <span>0:25</span>
-                            <div class="line mx-25">
+                            <div class="line d-flex al-it-c mx-25">
                                 <div class="grey-line"></div>
+                                <i class="fa-solid fa-circle"></i>
                             </div>
                             <span>4:25</span>
                         </div>
@@ -309,8 +343,9 @@
                             <i class="fa-solid fa-desktop pr-10"></i>
                             <i class="fa-solid pr-10 fa-volume-low"></i>
                         </div>
-                        <div class="line">
+                        <div class="line d-flex al-it-c">
                             <div class="grey-line"></div>
+                            <i class="fa-solid fa-circle"></i>
                         </div>
 
                     </div>
