@@ -69,6 +69,10 @@
     margin-right: 10px;
 }
 
+.mx-25{
+    margin: 0 25px;
+}
+
 /* DISPLAY FLEX */
 .d-flex{
     display: flex;
@@ -76,6 +80,10 @@
 
 .f-wrap{
     flex-wrap: wrap;
+}
+
+.f-dir-col{
+    flex-direction: column;
 }
 
 .space-bet{

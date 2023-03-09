@@ -42,12 +42,12 @@
                             <img class="nav-icon" src="assets/img/home.svg" alt="home">
                         <span>Home</span> </a>
                     </li>
-                    <li class="py-10">
+                    <li class="pb-10">
                         <a href="#"></href>
                             <img class="nav-icon" src="assets/img/search.svg" alt="search">
                             <span>Cerca</span></a>
                     </li>
-                    <li class="py-10">
+                    <li class="pb-10">
                         <a href="#">
                             <img class="nav-icon" src="assets/img/libreria.svg" alt="libreria">
                             <span>La tua libreria</span></a>
@@ -61,28 +61,29 @@
                             <li class="py-10">
                                 <h3>PLAYLIST</h3>
                             </li>
-                            <li class="py-10">
+                            <li class="pb-10">
                                 <i class="fa-solid fa-square-plus"></i>
                                 <a href="#">Crea Playlist</a>
                              </li>
                         </ul>
+                        <ul id="playlists">
+                            <li class="pb-10">
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li class="py-10">
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li class="py-10">
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li class="py-10">
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                           
+                            
+                            
+                        </ul>
                     </div>
-                    <ul id="playlists">
-                        <li class="py-10">
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li class="py-10">
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li class="py-10">
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li class="py-10">
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        
-                        
-                    </ul>
                     <div class="user-download">
 
                         <div class="download">
@@ -263,15 +264,17 @@
                 </div>
                 <!-- /Feed User -->
             </main>
+
+            <!-- Player -->
             <div class="player d-flex space-bet al-it-c px-15">
                 <section id="song">
                     <div class="mini-card d-flex al-it-c">
                         <div class="image">
                             <img src="assets/img/player_left.jpg" alt="player_left">
                         </div>
-                        <div class="title-song px-15">
+                        <div class="title-song d-flex f-dir-col px-15">
                             <a href="#">Hilltop Hoods</a>
-                            <a href="#">Clark Griswolo</a>
+                            <a id="author" href="#">Clark Griswolo</a>
                         </div>
                         <div class="icons-song">
                             <i class="fa-regular fa-heart pr-10"></i>
@@ -281,17 +284,17 @@
                 </section>
 
                 <section id="reproduce">
-                   <div id="controls d-flex">
-                        <div class="play d-flex j-cont-c">
-                            <i class="fa-solid fa-shuffle pr-10"></i>
-                            <i class="fa-solid fa-backward-step pr-10"></i>
-                            <i id="stop" class="fa-regular fa-circle-play pr-10"></i>
-                            <i class="fa-solid fa-forward-step pr-10"></i>
-                            <i class="fa-solid fa-rotate-right"></i>
+                   <div id="controls d-flex ">
+                        <div class="play d-flex j-cont-c al-it-c pb-10">
+                            <i class="fa-solid fa-shuffle px-15"></i>
+                            <i class="fa-solid fa-backward-step px-15"></i>
+                            <i id="stop" class="fa-regular fa-circle-play px-15"></i>
+                            <i class="fa-solid fa-forward-step px-15"></i>
+                            <i class="fa-solid px-15 fa-rotate-right"></i>
                         </div>
                         <div class="time d-flex j-cont-c al-it-c">
                             <span>0:25</span>
-                            <div class="line">
+                            <div class="line mx-25">
                                 <div class="grey-line"></div>
                             </div>
                             <span>4:25</span>
@@ -302,9 +305,9 @@
                 <section id="settings">
                     <div class="d-flex al-it-c">
                         <div class="settings-icons">
-                            <i class="fa-solid fa-list"></i>
-                            <i class="fa-solid fa-desktop"></i>
-                            <i class="fa-solid fa-volume-low"></i>
+                            <i class="fa-solid fa-list pr-10"></i>
+                            <i class="fa-solid fa-desktop pr-10"></i>
+                            <i class="fa-solid pr-10 fa-volume-low"></i>
                         </div>
                         <div class="line">
                             <div class="grey-line"></div>
